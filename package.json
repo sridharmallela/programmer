@@ -1,0 +1,93 @@
+{
+    "name": "programmer",
+    "version": "0.0.2",
+    "description": "Programmer AOP for commander",
+    "author": "Sridhar Mallela",
+    "license": "MIT",
+    "main": "bin/programmer.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sridharmallela/programmer.git"
+    },
+    "keywords": [
+        "nobody"
+    ],
+    "bugs": {
+        "url": "https://github.com/sridharmallela/programmer/issues"
+    },
+    "homepage": "https://github.com/sridharmallela/programmer#readme",
+    "directories": {
+        "bin": "bin"
+    },
+    "files": [
+        "bin/programmer.js",
+        "README.md"
+    ],
+    "config": {
+        "unsafe-perm": true,
+        "validate-commit-msg": {
+            "types": [
+                "feat",
+                "fix",
+                "docs",
+                "style",
+                "refactor",
+                "test",
+                "chore"
+            ],
+            "warnOnFail": false,
+            "maxSubjectLength": 1500,
+            "helpMessage": "use karma style git commit pattern"
+        }
+    },
+    "nyc": {
+        "extension": [
+            ".js"
+        ],
+        "exclude": [
+            "**/dist/*",
+            "**/bin/*",
+            "**/test/*",
+            "**/assets/*",
+            "**/coverage/*",
+            "**/*.spec.js"
+        ],
+        "reporter": [
+            "lcov",
+            "text"
+        ],
+        "all": true
+    },
+    "scripts": {
+        "check-versions": "./node_modules/.bin/versions-checker --node \">= 4.0.0\" --npm \">=2.0.0\" ",
+        "print-banner": "./node_modules/.bin/print-cli -b -c green \"programmer\"",
+        "commitmsg": "./node_modules/.bin/validate-commit-msg",
+        "clean": "./node_modules/.bin/rimraf coverage .nyc_output",
+        "lint": "./node_modules/.bin/eslint .",
+        "uglify": "./node_modules/.bin/uglifyjs ./lib/programmer.js -c -m -o ./bin/programmer.js",
+        "test-unit": "./node_modules/.bin/nyc mocha lib",
+        "test": "npm run build && npm run clean && npm run test-unit && npm run print-banner",
+        "build": "npm run check-versions && npm run lint && npm run uglify",
+        "report-coverage": "./node_modules/.bin/nyc report --reporter=lcov > coverage.lcov",
+        "code-coverage": "./node_modules/.bin/codecov",
+        "coverage": "npm run report-coverage && code-coverage",
+        "precommit": "npm test",
+        "preversion": "npm test",
+        "prepublishOnly": "npm test"
+    },
+    "dependencies": {
+        "commander": "^2.11.0"
+    },
+    "devDependencies": {
+        "chai": "^4.1.2",
+        "codecov": "^2.3.0",
+        "eslint": "^4.6.1",
+        "mocha": "^3.5.3",
+        "nyc": "^11.2.1",
+        "print-cli": "^1.5.1",
+        "rimraf": "^2.6.2",
+        "uglify-es": "^3.1.0",
+        "validate-commit-msg": "^2.14.0",
+        "versions-checker": "^1.1.0"
+    }
+}
