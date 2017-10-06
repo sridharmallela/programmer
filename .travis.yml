@@ -7,6 +7,18 @@ node_js:
     - "5"
     - "4"
 
+dist: truthy
+
+sudo: required
+
+addons:
+    sonarcloud:
+        organization: "sridharmallela-github"
+        token:
+            secure: "ijKC1f89NP+U1OETbmyYiCKj+btxU/k3QJ2+9BReLxceEX2x4HEtWNrxecBJXQgC0cmjr4qhcPpIJHAJBXhUF8qmRV8FwlFv85oT3PFD9ik8eoE4OLaS6h0KwP+DTcCopnXHwkUvqAuHQWdT4MHsb4nWbZVywYJbvH0y+CMtsLpLy+wy99Mdu8KazwJk++LN6S14mKdC3Z4QhmbVW7jIX1rBmwXPbX7p26RYbPL5hK0rdeu+1Kba5z3/NFHtX2mIJzvPf5v/10wvT9Oges8P4ha2x9aR16y9Ic7kavlermbQF1lRhcM5PUZFPKyDfQYoq7h75DYA3E6WvHtvEL44LIZzR2hpwE4xLPq70fV3B8EeKry6WJbt6HfA+pVnC3xVeSwCaos58UeZIgaZ69gQd/4tH5sIZMgayHwBJXPspRFnJICklfry2ah4JQfHGArBoQZETw0STtMyCLAWwiw9x0kvUQGN/khYDYkjyciWNfyrRnU8hzNVskSaHaoLfNtYR2G5XT/67jJwVZ1nT/wnlA3IhClPfSfbaAMI+/Ad1CusvtfLmTyhTBXcN0L9Sg36gLht73rSMzcxrS8+t1HiQZmL0g7HQCqbw4ZCqOGDqZ5SBfdFi/fOX3jXzEW0xwjN2S7VMRx40mVC5N2wgrRJ87o4WfV9BiDtxziOrgbxH0w="
+        branches:
+            - master
+
 os:
     - linux
 
@@ -17,9 +29,17 @@ branches:
 env:
     - NODE_ENV=TEST
 
+jdk:
+    - oraclejdk8
+
 install:
     - npm install
 
 script:
     - npm test
     - npm run coverage
+    - sonar-scanner
+
+cache:
+    directories:
+        - "$HOME/.sonar/cache"

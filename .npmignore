@@ -36,3 +36,4 @@ README.md
 .nyc_output
 assets
 .github
+bin/.gitkeep
