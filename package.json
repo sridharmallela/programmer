@@ -83,6 +83,7 @@
         "prepublishOnly": "npm test"
     },
     "dependencies": {
+        "child_process": "^1.0.2",
         "commander": "^2.11.0"
     },
     "devDependencies": {
@@ -90,6 +91,7 @@
         "chmod": "^0.2.1",
         "codecov": "^2.3.0",
         "eslint": "^4.8.0",
+        "husky": "^0.14.3",
         "mocha": "^3.5.3",
         "nyc": "^11.2.1",
         "rimraf": "^2.6.2",
