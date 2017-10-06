@@ -1,6 +1,6 @@
 {
     "name": "programmer",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Programmer AOP for commander",
     "author": "Sridhar Mallela",
     "license": "MIT",
@@ -54,8 +54,16 @@
         ],
         "reporter": [
             "lcov",
-            "text"
+            "text",
+            "cobertura",
+            "json"
         ],
+        "check-coverage": true,
+        "per-file": true,
+        "lines": 99,
+        "statements": 99,
+        "functions": 99,
+        "branches": 99,
         "all": true
     },
     "scripts": {
