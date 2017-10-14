@@ -1,6 +1,6 @@
 {
     "name": "programmer",
-    "version": "1.2.1",
+    "version": "1.2.2",
     "description": "Programmer AOP for commander",
     "author": "Sridhar Mallela",
     "license": "MIT",
@@ -69,10 +69,11 @@
     "scripts": {
         "commitmsg": "./node_modules/.bin/validate-commit-msg",
         "clean": "./node_modules/.bin/rimraf ./coverage ./.nyc_output ./bin/programmer.js",
+        "make-bin": "./node_modules/.bin/mkdirp ./bin -m 755",
         "permissions": "./node_modules/.bin/chmod 755 ./bin/programmer.js",
         "lint": "./node_modules/.bin/eslint ./lib",
         "uglify": "./node_modules/.bin/uglifyjs ./lib/programmer.js -c -m -o ./bin/programmer.js",
-        "build": "npm run clean && npm run lint && npm run uglify && npm run permissions",
+        "build": "npm run make-bin && npm run clean && npm run lint && npm run uglify && npm run permissions",
         "test-unit": "./node_modules/.bin/nyc ./node_modules/.bin/mocha ./lib",
         "test": "npm run build && npm run test-unit",
         "report-coverage": "./node_modules/.bin/nyc report --reporter=lcov > coverage.lcov",
@@ -92,6 +93,7 @@
         "codecov": "^2.3.0",
         "eslint": "^4.8.0",
         "husky": "^0.14.3",
+        "mkdirp": "^0.5.1",
         "mocha": "^4.0.1",
         "nyc": "^11.2.1",
         "rimraf": "^2.6.2",
