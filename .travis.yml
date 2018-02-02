@@ -2,11 +2,11 @@ language: node_js
 
 node_js:
     - "stable"
-    # - "8"
-    # - "7"
-    # - "6"
-    # - "5"
-    # - "4"
+    - "8"
+    - "7"
+    - "6"
+    - "5"
+    - "4"
 
 addons:
     sonarcloud:
