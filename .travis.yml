@@ -1,16 +1,3 @@
-dist: truthy
-
-sudo: required
-
-jdk:
-    - oraclejdk8
-
-os:
-    - linux
-
-env:
-    - NODE_ENV=TEST
-
 language: node_js
 
 node_js:
