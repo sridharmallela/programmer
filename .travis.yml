@@ -1,19 +1,25 @@
-language: node_js
-
-node_js:
-    - "stable"
-    - "8"
-    - "7"
-    - "6"
-    - "5"
-    - "4"
-
 dist: truthy
 
 sudo: required
 
 jdk:
     - oraclejdk8
+
+os:
+    - linux
+
+env:
+    - NODE_ENV=TEST
+
+language: node_js
+
+node_js:
+    - "stable"
+    # - "8"
+    # - "7"
+    # - "6"
+    # - "5"
+    # - "4"
 
 addons:
     sonarcloud:
@@ -23,16 +29,9 @@ addons:
         branches:
             - master
 
-os:
-    - linux
-
 branches:
     only:
         - master
-
-env:
-    - NODE_ENV=TEST
-    - JDK=oraclejdk8
 
 install:
     - npm install
@@ -45,3 +44,8 @@ script:
 cache:
     directories:
         - "$HOME/.sonar/cache"
+        - node_modules
+
+notifications:
+  email:
+    on_failure: change
