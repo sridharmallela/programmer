@@ -12,6 +12,9 @@ dist: truthy
 
 sudo: required
 
+jdk:
+    - oraclejdk8
+
 addons:
     sonarcloud:
         organization: "sridharmallela-github"
@@ -29,9 +32,7 @@ branches:
 
 env:
     - NODE_ENV=TEST
-
-jdk:
-    - oraclejdk9
+    - JDK=oraclejdk8
 
 install:
     - npm install
