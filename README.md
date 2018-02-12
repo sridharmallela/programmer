@@ -9,11 +9,12 @@
 
 [![GitHub tag](https://img.shields.io/github/tag/sridharmallela/programmer.svg?style=plastic)](https://github.com/sridharmallela/programmer/tags)
 [![GitHub release](https://img.shields.io/github/release/sridharmallela/programmer.svg?style=plastic)](https://github.com/sridharmallela/programmer/releases)
-[![GitHub issues](https://img.shields.io/github/issues/sridharmallela/programmer.svg?style=plastic)](https://github.com/sridharmallela/programmer/issues) 
+[![GitHub issues](https://img.shields.io/github/issues/sridharmallela/programmer.svg?style=plastic)](https://github.com/sridharmallela/programmer/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/sridharmallela/programmer.svg?style=plastic)](https://github.com/sridharmallela/programmer/pulls)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/sridharmallela/programmer/master/LICENSE)
 
-[![Build Status](https://img.shields.io/travis/sridharmallela/programmer.svg?style=plastic)](https://travis-ci.org/sridharmallela/programmer) 
+[![Build Status](https://img.shields.io/travis/sridharmallela/programmer.svg?style=plastic)](https://travis-ci.org/sridharmallela/programmer)
+[![Build status](https://ci.appveyor.com/api/projects/status/pa39t8s56yde69ft?svg=true)](https://ci.appveyor.com/project/sridharmallela/programmer)
 [![codecov](https://codecov.io/gh/sridharmallela/programmer/branch/master/graph/badge.svg)](https://codecov.io/gh/sridharmallela/programmer)
 [![Quality Gate](https://sonarcloud.io/api/badges/gate?key=com.sridharmallela.projects.programmer:master)](https://sonarcloud.io/dashboard/index/com.sridharmallela.projects.programmer:master)
 [![Lines of Code](https://sonarcloud.io/api/badges/measure?key=com.sridharmallela.projects.programmer:master&metric=ncloc)](https://sonarcloud.io/dashboard/index/com.sridharmallela.projects.programmer:master)
