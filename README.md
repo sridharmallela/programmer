@@ -1,4 +1,5 @@
 <a id="markdown-programmer" name="programmer"></a>
+
 # Programmer
 
 [![npm](https://img.shields.io/npm/v/programmer.svg?style=plastic)](https://www.npmjs.com/package/programmer)
@@ -41,42 +42,41 @@
 Generate a printable representation of ASCII text. Thanks to [Figlet](https://www.npmjs.com/package/figlet). Try it [here](http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20)
 
 <a id="markdown-table-of-contents" name="table-of-contents"></a>
+
 ## Table of Contents
 
 <!-- TOC -->
 
 - [Programmer](#programmer)
-    - [Table of Contents](#table-of-contents)
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [License](#license)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
 
 <!-- /TOC -->
 
-
 <a id="markdown-installation" name="installation"></a>
-## Installation
 
+## Installation
 
 ```bash
     $ npm install --save programmer
 ```
 
-
 <a id="markdown-usage" name="usage"></a>
+
 ## Usage
 
-
 ```js
-    var programmer = require('programmer');
+var programmer = require("programmer");
 ```
 
 ```ts
-    import { commander } from 'programmer';
+import { commander } from "programmer";
 ```
 
-
 <a id="markdown-license" name="license"></a>
+
 ## License
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
