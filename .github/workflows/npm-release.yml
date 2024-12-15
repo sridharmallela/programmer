@@ -14,7 +14,7 @@ permissions:
 
 defaults:
   run:
-    working-directory: web
+    working-directory: '.'
 
 jobs:
 
