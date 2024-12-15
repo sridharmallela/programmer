@@ -32,9 +32,7 @@
     "lint": "eslint \"./lib\"",
     "make-bin": "mkdirp \"./bin\" -m755",
     "permissions": "chmod-cli -m 755 \"./bin/programmer.js\"",
-    "precommit": "npm test",
-    "prepublishOnly": "npm test",
-    "preversion": "npm test",
+    "prepare": "husky",
     "test": "npm run build && npm run test-unit",
     "test-unit": "jest --config \"./jest.config.js\" --detectOpenHandles",
     "uglify": "uglifyjs \"./lib/programmer.js\" -c -m -o \"./bin/programmer.js\""
