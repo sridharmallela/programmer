@@ -1,6 +1,6 @@
 {
   "name": "programmer",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Programmer AOP for commander",
   "author": "Sridhar Mallela",
   "license": "MIT",
@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/sridharmallela/programmer/issues"
   },
-  "homepage": "https://github.com/sridharmallela/programmer#readme",
+  "homepage": "https://sridharmallela.github.io/programmer/",
   "directories": {
     "bin": "bin"
   },
@@ -26,62 +26,32 @@
   "config": {
     "unsafe-perm": true
   },
-  "nyc": {
-    "extension": [
-      ".js"
-    ],
-    "exclude": [
-      "**/dist/*",
-      "**/bin/*",
-      "**/test/*",
-      "**/assets/*",
-      "**/coverage/*",
-      "**/*.spec.js"
-    ],
-    "reporter": [
-      "lcov",
-      "text",
-      "cobertura",
-      "json"
-    ],
-    "check-coverage": true,
-    "per-file": true,
-    "lines": 99,
-    "statements": 99,
-    "functions": 99,
-    "branches": 99,
-    "all": true
-  },
   "scripts": {
     "build": "npm run make-bin && npm run clean && npm run lint && npm run uglify && npm run permissions",
-    "clean": "rimraf ./coverage ./.nyc_output ./bin/programmer.js",
-    "code-coverage": "codecov",
-    "coverage": "npm run report-coverage && npm run code-coverage",
-    "lint": "eslint ./lib",
-    "make-bin": "mkdirp ./bin -m755",
-    "permissions": "chmod-cli -m 755 ./bin/programmer.js",
+    "clean": "rimraf \"./coverage\" \"./.nyc_output\" \"./bin/programmer.js\"",
+    "lint": "eslint \"./lib\"",
+    "make-bin": "mkdirp \"./bin\" -m755",
+    "permissions": "chmod-cli -m 755 \"./bin/programmer.js\"",
     "precommit": "npm test",
     "prepublishOnly": "npm test",
     "preversion": "npm test",
-    "report-coverage": "nyc report --reporter=lcov > coverage.lcov",
     "test": "npm run build && npm run test-unit",
-    "test-unit": "nyc mocha ./lib",
-    "uglify": "uglifyjs ./lib/programmer.js -c -m -o ./bin/programmer.js"
+    "test-unit": "jest --config \"./jest.config.js\" --detectOpenHandles",
+    "uglify": "uglifyjs \"./lib/programmer.js\" -c -m -o \"./bin/programmer.js\""
   },
   "dependencies": {
-    "commander": "10.0.1"
+    "commander": "12.1.0"
   },
   "devDependencies": {
-    "chai": "~4.3.7",
-    "chmod-cli": "~1.0.4",
-    "codecov": "~3.8.3",
-    "eslint": "~8.42.0",
-    "husky": "~8.0.3",
+    "chmod-cli": "~2.0.1",
+    "eslint": "~8.57.1",
+    "husky": "~9.1.7",
+    "jest": "~29.7.0",
+    "jest-environment-node": "~29.7.0",
+    "jest-junit": "~16.0.0",
     "mkdirp": "~3.0.1",
-    "mocha": "~10.2.0",
-    "nyc": "~15.1.0",
-    "prettier": "~2.8.8",
-    "rimraf": "~5.0.1",
-    "uglify-es": "~3.3.9"
+    "prettier": "~3.4.2",
+    "rimraf": "~6.0.1",
+    "uglify-es": "~3.3.10"
   }
 }
