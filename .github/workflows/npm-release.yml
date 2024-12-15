@@ -61,8 +61,3 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           prefix: v
           version: "v${{ steps.cpv.outputs.committed-version }}"
-          files: |
-            LICENSE
-            package.json
-            README.md
-            bin/programmer.js
