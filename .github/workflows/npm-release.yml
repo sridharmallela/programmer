@@ -10,11 +10,14 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
 
   publish-npm:
     runs-on: ubuntu-latest
+    env:
+      working-directory: './dir'
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -32,10 +35,12 @@ jobs:
       - name: Install dependencies
         if: steps.cpv.outputs.is-new-version == 'true'
         run: npm ci
+        working-directory: ${{env.working-directory}}
 
       - name: Publish new version
         if: steps.cpv.outputs.is-new-version == 'true'
         run: npm publish
+        working-directory: ${{env.working-directory}}
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
 
