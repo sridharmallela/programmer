@@ -53,3 +53,16 @@ jobs:
           version: "v${{ steps.cpv.outputs.committed-version }}"
           message: "Release v${{ steps.cpv.outputs.committed-version }}"
           token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create Release
+        uses: dev-build-deploy/release-me@v0
+        if: steps.cpv.outputs.is-new-version == 'true'
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          prefix: v
+          version: "v${{ steps.cpv.outputs.committed-version }}"
+          files: |
+            LICENSE
+            package.json
+            README.md
+            bin/programmer.js
