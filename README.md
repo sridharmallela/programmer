@@ -14,32 +14,7 @@
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/sridharmallela/programmer.svg?style=plastic)](https://github.com/sridharmallela/programmer/pulls)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/sridharmallela/programmer/master/LICENSE)
 
-[![Build Status](https://img.shields.io/travis/sridharmallela/programmer.svg?style=plastic)](https://travis-ci.org/sridharmallela/programmer)
-[![Build status](https://ci.appveyor.com/api/projects/status/pa39t8s56yde69ft?svg=true)](https://ci.appveyor.com/project/sridharmallela/programmer)
-[![codecov](https://codecov.io/gh/sridharmallela/programmer/branch/master/graph/badge.svg)](https://codecov.io/gh/sridharmallela/programmer)
-[![Quality Gate](https://sonarcloud.io/api/badges/gate?key=com.sridharmallela.projects.programmer:master)](https://sonarcloud.io/dashboard/index/com.sridharmallela.projects.programmer:master)
-[![Lines of Code](https://sonarcloud.io/api/badges/measure?key=com.sridharmallela.projects.programmer:master&metric=ncloc)](https://sonarcloud.io/dashboard/index/com.sridharmallela.projects.programmer:master)
-
-[![Bugs](https://sonarcloud.io/api/badges/measure?key=com.sridharmallela.projects.programmer:master&metric=bugs)](https://sonarcloud.io/dashboard/index/com.sridharmallela.projects.programmer:master)
-[![Code Smells](https://sonarcloud.io/api/badges/measure?key=com.sridharmallela.projects.programmer:master&metric=code_smells)](https://sonarcloud.io/dashboard/index/com.sridharmallela.projects.programmer:master)
-[![Critical Violations](https://sonarcloud.io/api/badges/measure?key=com.sridharmallela.projects.programmer:master&metric=critical_violations)](https://sonarcloud.io/dashboard/index/com.sridharmallela.projects.programmer:master)
-[![Blocker Violations](https://sonarcloud.io/api/badges/measure?key=com.sridharmallela.projects.programmer:master&metric=blocker_violations)](https://sonarcloud.io/dashboard/index/com.sridharmallela.projects.programmer:master)
-[![Technical Debt Ratio](https://sonarcloud.io/api/badges/measure?key=com.sridharmallela.projects.programmer:master&metric=sqale_debt_ratio)](https://sonarcloud.io/dashboard/index/com.sridharmallela.projects.programmer:master)
-
-[![Security Ratings](https://sonarcloud.io/api/badges/measure?key=com.sridharmallela.projects.programmer:master&metric=new_security_rating)](https://sonarcloud.io/dashboard/index/com.sridharmallela.projects.programmer:master)
-[![Reliability Ratings](https://sonarcloud.io/api/badges/measure?key=com.sridharmallela.projects.programmer:master&metric=new_reliability_rating)](https://sonarcloud.io/dashboard/index/com.sridharmallela.projects.programmer:master)
-[![Maintainability Ratings](https://sonarcloud.io/api/badges/measure?key=com.sridharmallela.projects.programmer:master&metric=new_maintainability_rating)](https://sonarcloud.io/dashboard/index/com.sridharmallela.projects.programmer:master)
-
-[![node](https://img.shields.io/node/v/sridharmallela/programmer.svg?style=plastic)](https://www.npmjs.com/package/programmer)
-[![David](https://img.shields.io/david/sridharmallela/programmer.svg?style=plastic)](https://www.npmjs.com/package/programmer)
-[![David](https://img.shields.io/david/dev/sridharmallela/programmer.svg?style=plastic)](https://www.npmjs.com/package/programmer)
-[![David](https://img.shields.io/david/optional/sridharmallela/programmer.svg?style=plastic)](https://www.npmjs.com/package/programmer)
-
-[![GitHub forks](https://img.shields.io/github/forks/sridharmallela/programmer.svg?style=social&label=Fork)](https://github.com/sridharmallela/programmer/)
-[![GitHub stars](https://img.shields.io/github/stars/sridharmallela/programmer.svg?style=social&label=Star)](https://github.com/sridharmallela/programmer/)
-[![GitHub watchers](https://img.shields.io/github/watchers/sridharmallela/programmer.svg?style=social&label=Watch)](https://github.com/sridharmallela/programmer/)
-
-Generate a printable representation of ASCII text. Thanks to [Figlet](https://www.npmjs.com/package/figlet). Try it [here](http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20)
+[![Node.js CI](https://github.com/sridharmallela/programmer/actions/workflows/node.js.yml/badge.svg?branch=master)](https://github.com/sridharmallela/programmer/actions/workflows/node.js.yml)
 
 <a id="markdown-table-of-contents" name="table-of-contents"></a>
 
