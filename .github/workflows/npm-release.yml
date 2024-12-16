@@ -12,14 +12,10 @@ permissions:
   contents: write
   actions: write
 
-defaults:
-  run:
-    working-directory: '.'
-
 jobs:
-
   publish-npm:
     runs-on: ubuntu-latest
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
