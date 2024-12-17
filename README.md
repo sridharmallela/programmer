@@ -12,9 +12,9 @@
 [![GitHub release](https://img.shields.io/github/release/sridharmallela/programmer.svg?style=plastic)](https://github.com/sridharmallela/programmer/releases)
 [![GitHub issues](https://img.shields.io/github/issues/sridharmallela/programmer.svg?style=plastic)](https://github.com/sridharmallela/programmer/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/sridharmallela/programmer.svg?style=plastic)](https://github.com/sridharmallela/programmer/pulls)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/sridharmallela/programmer/master/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/sridharmallela/programmer/main/LICENSE)
 
-[![Node.js CI](https://github.com/sridharmallela/programmer/actions/workflows/node.js.yml/badge.svg?branch=master)](https://github.com/sridharmallela/programmer/actions/workflows/node.js.yml)
+[![Node.js CI](https://github.com/sridharmallela/programmer/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/sridharmallela/programmer/actions/workflows/node.js.yml)
 
 <a id="markdown-table-of-contents" name="table-of-contents"></a>
 
